@@ -13,10 +13,11 @@ License:	GPL
 Group:		Graphical desktop/Other
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	xfce-dev-tools
-BuildRequires:	autoconf2.5
-BuildRequires:	automake1.9
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	intltool
 BuildRequires:	glib-gettextize 
+
 %description
 Scramble is the command find tool used by the Xffm-filemanager to 
 encrypt and descrypt files upon user request. The application is 
@@ -26,14 +27,13 @@ also used to schred files before deleting.
 %setup -q
 
 %build
-aclocal -I /usr/share/xfce4/dev-tools/m4macros -I ./m4
-autoconf
+autoreconf -fi -I /usr/share/xfce4/dev-tools/m4macros
 %configure2_5x
 %make
 										
 %install
 rm -rf %{buildroot}
-%makeinstall
+%makeinstall_std
 
 %clean
 rm -rf %{buildroot}
@@ -46,6 +46,3 @@ rm -rf %{buildroot}
 %{_mandir}/man1/*
 %{_datadir}/xffm/%{name}
 %{_libdir}/pkgconfig/%{name}.pc
-%{_datadir}/locale/*/*/%{name}.mo
-
-
