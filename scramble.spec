@@ -46,3 +46,43 @@ rm -rf %{buildroot}
 %{_mandir}/man1/*
 %{_datadir}/xffm/%{name}
 %{_libdir}/pkgconfig/%{name}.pc
+
+
+%changelog
+* Tue Dec 07 2010 Oden Eriksson <oeriksson@mandriva.com> 4.5.0-8mdv2011.0
++ Revision: 614827
+- the mass rebuild of 2010.1 packages
+
+* Mon Feb 22 2010 Funda Wang <fwang@mandriva.org> 4.5.0-7mdv2010.1
++ Revision: 509815
+- fix build
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Sat Aug 02 2008 Thierry Vignaud <tv@mandriva.org> 4.5.0-6mdv2009.0
++ Revision: 260571
+- rebuild
+
+* Tue Jul 29 2008 Thierry Vignaud <tv@mandriva.org> 4.5.0-5mdv2009.0
++ Revision: 252184
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Tue Dec 11 2007 Thierry Vignaud <tv@mandriva.org> 4.5.0-3mdv2008.1
++ Revision: 117273
+- rebuild (missing on ia32)
+
+
+* Wed Mar 07 2007 Nicolas Lécureuil <neoclust@mandriva.org> 4.5.0-2mdv2007.1
++ Revision: 134797
+- Fix Group
+
+* Tue Jan 09 2007 Crispin Boylan <crisb@mandriva.org> 4.5.0-1mdv2007.1
++ Revision: 106475
+- First mandriva package
+- Create scramble
+
