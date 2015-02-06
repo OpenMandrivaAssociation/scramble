@@ -1,6 +1,6 @@
 %define name	scramble
 %define version 4.5.0
-%define release %mkrel 8
+%define release 9
 
 Name: 	 	%{name}
 Summary: 	File encryption utility used by xffm
