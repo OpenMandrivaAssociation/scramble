@@ -8,7 +8,7 @@ Version: 	%{version}
 Release: 	%{release}
 
 Source:		http://downloads.sourceforge.net/xffm/%{name}-%{version}.tar.bz2
-URL:		http://xffm.sf.net
+URL:		https://xffm.sf.net
 License:	GPL
 Group:		Graphical desktop/Other
 BuildRoot:	%{_tmppath}/%{name}-buildroot
